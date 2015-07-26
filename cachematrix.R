@@ -1,6 +1,6 @@
 ## These function are used to cache (or compute) the inverse of a matrix
 
-## makeCacheMatrix is used to
+## makeCacheMatrix is used to get and set the inverse value
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -20,7 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve is used to retreive value from cache (if any) or calculate the inverse
 
 cacheSolve <- function(x, ...) {
   inv <- x$getinv()
